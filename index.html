@@ -4,9 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Portafolio | Reptantia </title>
+  <meta name="description" itemprop="description" content="Reptantia es una agencia creativa para científicos y académicos. Diseño Gráfico | Desarrollo Web.">
+
+  <link id="favicon" rel="shortcut icon" href="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/favicon_white_ig_pp_cccafcab-766f-4603-91b2-03d5d1093aaf.png?v=1642785094" type="image/png">
 </head>
 <body>
   <h1>Hello World!</h1>
+
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script defer="defer">
+  const isDarkMode = window.matchMedia('(prefers-color-scheme:dark)').matches;
+  if (isDarkMode) {
+    const favicon = document.getElementById("favicon");
+    favicon.setAttribute("href", "https://cdn.shopify.com/s/files/1/0507/9102/2742/files/favicon_white_ig_pp_cccafcab-766f-4603-91b2-03d5d1093aaf.png?v=1642785094");
+  }
+</script>
 </body>
 </html>
