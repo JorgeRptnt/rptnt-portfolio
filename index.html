@@ -8,17 +8,260 @@
   <meta name="description" itemprop="description" content="Reptantia es una agencia creativa para científicos y académicos. Diseño Gráfico | Desarrollo Web.">
 
   <link id="favicon" rel="shortcut icon" href="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/favicon_white_ig_pp_cccafcab-766f-4603-91b2-03d5d1093aaf.png?v=1642785094" type="image/png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Hello World!</h1>
+  <div class="nav">
+  <nav class="header">
+    <div class="one-third">
+      <div class="menu">
+        <a class="menu-text" data-bs-toggle="offcanvas" href="#offcanvasWithBothOptions" role="button" aria-controls="#offcanvasWithBothOptions">
+          <i class="menu-icon fa-solid fa-bars"></i> Explorar
+        </a>
+      </div>
+    </div>
+    <div class="one-third" id="logo">
+      <img src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/favicon_corrected_ig_pp.png?v=1614336287" alt="Reptantia Logo">
+    </div>
+    <div class="one-third"></div>
+  </nav>
+</div>
 
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Filtros</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="button-group filters-button-group">
+      <i class="fa-solid fa-hashtag"></i><button class="button is-checked" data-filter="*" onclick="youRwatching();">Proyectos Recientes</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=".metal" onclick="youRwatching();">Visualización de datos</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=".transition" onclick="youRwatching();">Cartografía</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=".alkali, .alkaline-earth" onclick="youRwatching();">Diseño de Información</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=":not(.transition)" onclick="youRwatching();">Infografía</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=".metal:not(.transition)" onclick="youRwatching();">Diseño de presentación</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=".lanthanoid" onclick="youRwatching();">Cartel científico</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=".post-transition" onclick="youRwatching();">Marketing y publicidad</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=".inner-transition" onclick="youRwatching();">Diseño Editorial</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=".noble-gas" onclick="youRwatching();">Identidad visual</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=".diatomic" onclick="youRwatching();">Logo</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=".actinoid" onclick="youRwatching();">Iconografía</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=".metalloid" onclick="youRwatching();">Ilustración</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=".metal" onclick="youRwatching();">Fotografía</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=".transition" onclick="youRwatching();">Desarrollo web</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=".alkali" onclick="youRwatching();">Desarrollo de apps</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=".alkaline-earth" onclick="youRwatching();">Producción audiovisual</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=".alkali, .alkaline-earth" onclick="youRwatching();">Podcast</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=":not(.transition)" onclick="youRwatching();">Animación</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=".metal:not(.transition)" onclick="youRwatching();">Diseño 3D</button><br>
+      <i class="fa-solid fa-hashtag"></i><button class="button" data-filter=".metal" onclick="youRwatching();">Motion graphics</button><br>
+    </div>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="element-item transition metal x1 " data-category="transition">
+    <div class="a1d2">
+      <div class="content">
+        <div class="portfolio-item" style="text-orientation: sideways; writing-mode: vertical-lr; letter-spacing: .33rem;">Próximamente</div>
+      </div>
+    </div>
+  </div>
+  <div class="element-item metalloid x2 " data-category="metalloid">
+    <div class="a1d1">
+      <div class="content">
+        <div class="portfolio-item" style="letter-spacing: .33rem;">Próximamente</div>
+      </div>
+    </div>
+  </div>
+  <div class="element-item post-transition metal metalloid alkali alkaline-earth lanthanoid inner-transition noble-gas diatomic actinoid x3 " data-category="post-transition">
+    <div class="a1d1">
+      <div class="content">
+        <div class="hero">
+          <hr style="display:block;">
+          <p class="rept"> Portafolio</p>
+          <h7 class="titulos">Reptantia</h7>
+          <p class="subtitulo">
+            Somos un estudio creativo que ayuda a científicos y académicos a comunicar la ciencia.
+          </p>
+          <p class="watching">Estás viendo:</p>
+          <div class="reference"><i class="fa-solid fa-hashtag"></i><button class="button Rwatching">Proyectos recientes</button></div>
+          <a class="alt-menu" data-bs-toggle="offcanvas" href="#offcanvasWithBothOptions" role="button" aria-controls="#offcanvasWithBothOptions"><i class="menu-icon fa-solid fa-bars"></i> Explorar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="element-item post-transition metal x2 " data-category="post-transition">
+    <div class="a1d1">
+      <div class="content">
+        <div class="portfolio-item"></div>
+      </div>
+    </div>
+  </div>
+  <div class="element-item transition metal x1 " data-category="transition">
+    <div class="a1d2">
+      <div class="content">
+        <div class="portfolio-item"></div>
+      </div>
+    </div>
+  </div>
+  <div class="element-item alkali metal x3 " data-category="alkali">
+    <div class="a3d2">
+      <div class="content">
+        <div class="portfolio-item"></div>
+      </div>
+    </div>
+  </div>
+  <div class="element-item alkali metal x3 " data-category="alkali">
+    <div class="a3d2">
+      <div class="content">
+        <div class="portfolio-item"></div>
+      </div>
+    </div>
+  </div>
+  <div class="element-item transition metal x3 " data-category="transition">
+    <div class="a3d1">
+      <div class="content">
+        <div class="portfolio-item"></div>
+      </div>
+    </div>
+  </div>
+  <div class="element-item alkaline-earth metal x1 " data-category="alkaline-earth">
+    <div class="a1d2">
+      <div class="content">
+        <div class="portfolio-item"></div>
+      </div>
+    </div>
+  </div>
+  <div class="element-item transition metal x2 " data-category="transition">
+    <div class="a2d3">
+      <div class="content">
+        <div class="portfolio-item"></div>
+      </div>
+    </div>
+  </div>
+  <div class="element-item post-transition metal x3" data-category="post-transition">
+    <div class="a3d2">
+      <div class="content">
+        <div class="portfolio-item"></div>
+      </div>
+    </div>
+  </div>
+  <div class="element-item metalloid x2 " data-category="metalloid">
+    <div class="a2d3">
+      <div class="content">
+        <div class="portfolio-item"></div>
+      </div>
+    </div>
+  </div>
+  <div class="element-item transition metal x1 " data-category="transition">
+    <div class="a1d2">
+      <div class="content">
+        <div class="portfolio-item"></div>
+      </div>
+    </div>
+  </div>
+  <div class="element-item lanthanoid metal inner-transition x1 " data-category="lanthanoid">
+    <div class="a1d1">
+      <div class="content">
+        <div class="portfolio-item"></div>
+      </div>
+    </div>
+  </div>
+  <div class="element-item noble-gas nonmetal x1 " data-category="noble-gas">
+    <div class="a1d1">
+      <div class="content">
+        <div class="portfolio-item"></div>
+      </div>
+    </div>
+  </div>
+  <div class="element-item diatomic nonmetal x2 " data-category="diatomic">
+    <div class="a2d1">
+      <div class="content">
+        <div class="portfolio-item"></div>
+      </div>
+    </div>
+  </div>
+  <div class="element-item actinoid metal inner-transition x1 " data-category="actinoid">
+    <div class="a1d1">
+      <div class="content">
+        <div class="portfolio-item"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="icons">
+  <a href="mailto:jorgereptantia@gmail.com" style="display:inline-block;"><i class="fa-solid fa-envelope"></i></a><a target="_blank" href="https://wa.me/5215522062720/?text=¡Hola%20Reptantia!" style="display:inline-block;"><i class="fa-brands fa-whatsapp"></i></a><a target="_blank" href="https://telegram.me/reptantia" style="display:inline-block;"><i class="fa-brands fa-telegram"></i></a>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/388e81c0ad.js" crossorigin="anonymous" defer="defer"></script>
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/isotope-packery@2/packery-mode.pkgd.min.js"></script>
   <script defer="defer">
   const isDarkMode = window.matchMedia('(prefers-color-scheme:dark)').matches;
   if (isDarkMode) {
     const favicon = document.getElementById("favicon");
     favicon.setAttribute("href", "https://cdn.shopify.com/s/files/1/0507/9102/2742/files/favicon_white_ig_pp_cccafcab-766f-4603-91b2-03d5d1093aaf.png?v=1642785094");
   }
+  </script>
+
+  <script>
+// external js: isotope.pkgd.js, packery-mode.pkgd.js
+
+// init Isotope
+var iso = new Isotope( '.grid', {
+  layoutMode: 'packery',
+  itemSelector: '.element-item'
+});
+
+// filter functions
+var filterFns = {
+};
+
+// bind filter button click
+var filtersElem = document.querySelector('.filters-button-group');
+filtersElem.addEventListener( 'click', function( event ) {
+  // only work with buttons
+  if ( !matchesSelector( event.target, 'button' ) ) {
+    return;
+  }
+  var filterValue = event.target.getAttribute('data-filter');
+  // use matching filter function
+  filterValue = filterFns[ filterValue ] || filterValue;
+  iso.arrange({ filter: filterValue });
+});
+
+// change is-checked class on buttons
+var buttonGroups = document.querySelectorAll('.button-group');
+for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
+  var buttonGroup = buttonGroups[i];
+  radioButtonGroup( buttonGroup );
+}
+
+function radioButtonGroup( buttonGroup ) {
+  buttonGroup.addEventListener( 'click', function( event ) {
+    // only work with buttons
+    if ( !matchesSelector( event.target, 'button' ) ) {
+      return;
+    }
+    buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
+    event.target.classList.add('is-checked');
+  });
+}
+
+</script>
+
+<script>
+function youRwatching() {
+  setTimeout(() => {
+  const  elements = document.getElementsByClassName('is-checked');
+  const text = elements[0].innerHTML ;
+  const watchingR = document.getElementsByClassName('Rwatching');
+  watchingR[0].innerHTML  = text;
+}, 125);
+}
 </script>
 </body>
 </html>
