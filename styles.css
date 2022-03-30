@@ -220,6 +220,12 @@ h5 {
   padding: 30px 15px;
 }
 
+@media (max-width: 480px) {
+  .offcanvas {
+    padding: 15px 7.5px;
+  }
+}
+
 .offcanvas-body {
   display: flex;
   flex-grow: 0;
@@ -272,7 +278,7 @@ h5 {
 .offcanvas-start {
   top: 0;
   left: 0;
-  width: 400px;
+  max-width: 400px;
   border-right: 1px solid #ececec;
   box-shadow: 4px 0 10px -10px grey;
   transform: translateX(-100%);
@@ -752,5 +758,69 @@ h5 {
 }
 
 @media screen and (max-width:480px){
+  .grid {
+    width: 100%;
+    margin-top: 66px;
+  }
 
+  .x1 {
+    width: calc(100% / 3);
+  }
+
+  .x2 {
+    width: calc(200% / 3);
+  }
+
+  .x3 {
+    width: calc(300% / 3);
+  }
+
+  .header img {
+    width:50px;
+  }
+
+  .header {
+    padding:0 0;
+  }
+
+  .menu {
+    padding: 0 15px;
+  }
+
+  .menu-text {
+    font-size: 1.125rem;
+  }
+
+  button {
+    padding: 1px 2px;
+  }
+
+  .hero {
+    width: calc(100% - 66px);
+    height: calc(100% - 66px);
+    padding:33px 33px;
+  }
+
+  .rept {
+    font-size:14px;
+  }
+
+  .titulos {
+    font-size: 2em;
+  }
+
+  .subtitulo, .watching {
+    font-size: .95rem;
+  }
+
+  .reference button {
+    font-size: 1rem;
+  }
+
+  .portfolio-item {
+    width: calc(100% - 66px);
+    height: calc(100% - 66px);
+    padding:33px 33px;
+    font-size:14px;
+  }
 }
