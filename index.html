@@ -36,8 +36,9 @@
   </div>
   <div class="offcanvas-body">
     <div class="button-group filters-button-group">
-      <i class="fas fa-hashtag"></i><button class="button is-checked" data-filter=".recent" onclick="youRwatching();">Proyectos Recientes</button><br>
-      <i class="fas fa-hashtag"></i><button class="button" data-filter=".viz, .maps, .charts" onclick="youRwatching();">Diseño de Información</button><br>
+      <i class="fas fa-hashtag"></i><button class="button is-checked" data-filter="*" onclick="youRwatching();">Todos los proyectos</button><br>
+      <i class="fas fa-hashtag"></i><button class="button" data-filter=".recent" onclick="youRwatching();">Proyectos recientes</button><br>
+      <i class="fas fa-hashtag"></i><button class="button" data-filter=".viz, .maps, .charts" onclick="youRwatching();">Diseño de información</button><br>
       <i class="fas fa-hashtag"></i><button class="button" data-filter=".viz" onclick="youRwatching();">Visualización de datos</button><br>
       <i class="fas fa-hashtag"></i><button class="button" data-filter=".maps" onclick="youRwatching();">Cartografía</button><br>
       <i class="fas fa-hashtag"></i><button class="button" data-filter=".ilustra" onclick="youRwatching();">Ilustración</button><br>
@@ -84,7 +85,7 @@
             Somos un estudio creativo que ayuda a científicos y académicos a comunicar la ciencia.
           </p>
           <p class="watching">Estás viendo:</p>
-          <div class="reference"><i class="fas fa-hashtag"></i><button class="button Rwatching">Proyectos recientes</button></div>
+          <div class="reference"><i class="fas fa-hashtag"></i><button class="button Rwatching">Todos los proyectos</button></div>
           <a class="alt-menu" data-bs-toggle="offcanvas" href="#offcanvasWithBothOptions" role="button" aria-controls="#offcanvasWithBothOptions"><i class="fas fa-bars"></i> Explorar</a>
         </div>
       </div>
@@ -233,6 +234,17 @@
       </div>
     </div>
   </div>
+  <div class="element-item photo x3 recent " data-category="charts">
+    <div class="a3d2">
+      <div class="content">
+        <div class="portfolio-item">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/corn_stem_comp.jpg?v=1648942428" data-bs-ref="Mejorar la definición de imágenes de microscopía. Thomas Quine. Corn stem cross-section. CC BY 2.0">
+            <img style="transform:scale(1.1);" class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/corn_stem_comp.jpg?v=1648942428" alt="Corn stem cross-section">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="element-item photo x2 recent " data-category="charts">
     <div class="a1d1">
       <div class="content">
@@ -250,17 +262,6 @@
         <div class="portfolio-item">
           <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/tardigrade_comp.jpg?v=1648943064" data-bs-ref="Remover objetos. AJC1. Tardigrade. CC BY-SA 2.0">
             <img style="left:-14.65%;" class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/tardigrade_comp.jpg?v=1648943064" alt="Tardigrade">
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="element-item photo x3 recent " data-category="charts">
-    <div class="a3d2">
-      <div class="content">
-        <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/corn_stem_comp.jpg?v=1648942428" data-bs-ref="Mejorar la definición de imágenes de microscopía. Thomas Quine. Corn stem cross-section. CC BY 2.0">
-            <img style="transform:scale(1.1);" class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/corn_stem_comp.jpg?v=1648942428" alt="Corn stem cross-section">
           </button>
         </div>
       </div>
