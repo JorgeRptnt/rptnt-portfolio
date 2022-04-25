@@ -63,7 +63,7 @@
       <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".app" onclick="youRwatching();">Desarrollo de apps</button><br>-->
       <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".podcast, .animate, .motion, .threed" onclick="youRwatching();">Producción audiovisual</button><br>-->
       <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".podcast" onclick="youRwatching();">Podcast</button><br>-->
-      <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".animate" onclick="youRwatching();">Animación</button><br>-->
+      <i class="fas fa-hashtag"></i><button class="button" data-filter=".animate" onclick="youRwatching();">Animación</button><br>
       <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".threed" onclick="youRwatching();">Diseño 3D</button><br>-->
       <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".motion" onclick="youRwatching();">Motion graphics</button><br>-->
     </div>
@@ -275,6 +275,28 @@
       </div>
     </div>
   </div>
+  <div class="element-item animate x2 recent " data-category="animate">
+    <div class="a1d1">
+      <div class="content">
+        <div class="portfolio-item">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lottiebox" data-bs-jsonsrc="https://assets10.lottiefiles.com/packages/lf20_vstkmqkw.json" data-bs-ref="Animación digital. Caricatura de un átomo. Tamaño: 23 KB.">
+            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/atom-01.jpg?v=1649557898" alt="Átomo">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="element-item ilustra x3 recent " data-category="ilustra">
+    <div class="a1d1">
+      <div class="content">
+        <div class="portfolio-item">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/protein.jpg?v=1649646078" data-bs-ref="Mechanosensitive Channel Piezo1. Ilustración asistida del Protein Data Bank y Protein Imager (G. Tomasello, I. Armenia y G. Molla, 2020).">
+            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/protein.jpg?v=1649646078" alt="MECHANOSENSITIVE CHANNEL PIEZO1">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="element-item x1 viz charts maps ilustra photo info ppt poster mkt editorial logo icon web app podcast animate motion threed recent " data-category="charts">
     <div class="a1d1">
       <div class="content">
@@ -372,6 +394,22 @@
     </div>
   </div>
 </div>
+<div class="modal fade" id="lottiebox" tabindex="-1" aria-labelledby="lightboxLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      </div>
+      <div class="modal-body">
+      </div>
+      <p></p>
+      <div class="modal-footer">
+        <button type="button" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="footer">
   <p>© 2022 Reptantia</p>
 </div>
@@ -412,15 +450,42 @@ lightboxModal.addEventListener('show.bs.modal', function (event) {
   var modalBodyPreview = lightboxModal.querySelector('.modal-body #preview');
   var modalBodyRef = lightboxModal.querySelector('.modal-content p');
 
+  document.querySelectorAll(".one-third")[1].style.paddingRight = getComputedStyle(document.documentElement).getPropertyValue('--scrollbar-width');
+  document.querySelectorAll(".icons")[0].style.right = String(parseInt(getComputedStyle(document.querySelectorAll(".icons")[0]).getPropertyValue('right')) + parseInt(getComputedStyle(document.documentElement).getPropertyValue('--scrollbar-width'))) + "px";
+
   modalBodyImg.src = recipient;
   modalBodyPreview.src = recipient;
   modalBodyRef.innerHTML = recipient2;
-
-  document.querySelectorAll(".one-third")[1].style.paddingRight = getComputedStyle(document.documentElement).getPropertyValue('--scrollbar-width');
-  document.querySelectorAll(".icons")[0].style.right = String(parseInt(getComputedStyle(document.querySelectorAll(".icons")[0]).getPropertyValue('right')) + parseInt(getComputedStyle(document.documentElement).getPropertyValue('--scrollbar-width'))) + "px";
 });
 
 lightboxModal.addEventListener('hide.bs.modal', function (event) {
+  setTimeout(() => {
+  document.querySelectorAll(".one-third")[1].style.paddingRight = 0;
+  document.querySelectorAll(".icons")[0].style.right = String(parseInt(getComputedStyle(document.querySelectorAll(".icons")[0]).getPropertyValue('right')) - parseInt(getComputedStyle(document.documentElement).getPropertyValue('--scrollbar-width'))) + "px";
+}, 300);
+});
+</script>
+
+<script>
+var lottieboxModal = document.getElementById('lottiebox');
+lottieboxModal.addEventListener('show.bs.modal', function (event) {
+  // Button that triggered the modal
+  var button = event.relatedTarget;
+  // Extract info from data-bs-* attributes
+  var recipient3 = button.getAttribute('data-bs-jsonsrc');
+  var recipient4 = button.getAttribute('data-bs-ref');
+  // Update the modal's content.
+  var modalBody = lottieboxModal.querySelector('.modal-body');
+  var modalBodyRef = lottieboxModal.querySelector('.modal-content p');
+
+  document.querySelectorAll(".one-third")[1].style.paddingRight = getComputedStyle(document.documentElement).getPropertyValue('--scrollbar-width');
+  document.querySelectorAll(".icons")[0].style.right = String(parseInt(getComputedStyle(document.querySelectorAll(".icons")[0]).getPropertyValue('right')) + parseInt(getComputedStyle(document.documentElement).getPropertyValue('--scrollbar-width'))) + "px";
+
+  modalBody.innerHTML = '<lottie-player background="transparent" src="' + recipient3 + '" speed="1"  style="width: 100%; height: auto;"  loop  autoplay></lottie-player>';
+  modalBodyRef.innerHTML = recipient4;
+});
+
+lottieboxModal.addEventListener('hide.bs.modal', function (event) {
   setTimeout(() => {
   document.querySelectorAll(".one-third")[1].style.paddingRight = 0;
   document.querySelectorAll(".icons")[0].style.right = String(parseInt(getComputedStyle(document.querySelectorAll(".icons")[0]).getPropertyValue('right')) - parseInt(getComputedStyle(document.documentElement).getPropertyValue('--scrollbar-width'))) + "px";
