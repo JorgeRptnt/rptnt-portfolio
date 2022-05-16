@@ -9,7 +9,7 @@
 
   <link id="favicon" rel="shortcut icon" href="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/favicon_corrected_ig_pp.png?v=1614336287" type="image/png">
   <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/388e81c0ad.js" crossorigin="anonymous"></script>
+  <script defer src="https://kit.fontawesome.com/388e81c0ad.js" crossorigin="anonymous"></script>
   <meta property="og:title" content="Portafolio | Reptantia" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://portfolio.reptantia.com" />
@@ -20,63 +20,69 @@
 
 <body>
   <div class="nav">
-  <nav class="header">
-    <div class="one-third">
-      <div class="menu">
-        <a class="menu-text" data-bs-toggle="offcanvas" href="#offcanvasWithBothOptions" role="button" aria-controls="#offcanvasWithBothOptions">
-          <i class="fas fa-bars"></i> Explorar
-        </a>
+    <nav class="header">
+      <div class="one-third">
+        <div class="menu">
+          <a class="menu-text" data-bs-toggle="offcanvas" href="#offcanvasWithBothOptions" role="button" aria-controls="#offcanvasWithBothOptions">
+            <i class="fas fa-bars"></i> Explorar
+          </a>
+        </div>
       </div>
-    </div>
-    <div class="one-third" id="logo">
-      <div style="width:fit-content; margin:auto;">
-        <a href="https://reptantia.com/servicios"><img src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/favicon_corrected_ig_pp.png?v=1614336287" alt="Reptantia Logo"></a>
+      <div class="one-third" id="logo">
+        <div style="width:fit-content; margin:auto;">
+          <a href="https://reptantia.com/servicios"><img src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/favicon_corrected_ig_pp.png?v=1614336287" alt="Reptantia Logo"></a>
+        </div>
       </div>
-    </div>
-    <div class="one-third"></div>
-  </nav>
-</div>
+      <div class="one-third"></div>
+    </nav>
+  </div>
 
   <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Filtros</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div class="button-group filters-button-group">
-      <i class="fas fa-hashtag"></i><button class="button is-checked" data-filter="*" onclick="youRwatching();">Todos los proyectos</button><br>
-      <i class="fas fa-hashtag"></i><button class="button" data-filter=".recent" onclick="youRwatching();">Proyectos recientes</button><br>
-      <i class="fas fa-hashtag"></i><button class="button" data-filter=".viz, .maps, .charts" onclick="youRwatching();">Diseño de información</button><br>
-      <i class="fas fa-hashtag"></i><button class="button" data-filter=".viz" onclick="youRwatching();">Visualización de datos</button><br>
-      <i class="fas fa-hashtag"></i><button class="button" data-filter=".maps" onclick="youRwatching();">Cartografía</button><br>
-      <i class="fas fa-hashtag"></i><button class="button" data-filter=".ilustra" onclick="youRwatching();">Ilustración</button><br>
-      <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".info" onclick="youRwatching();">Infografía</button><br>-->
-      <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".ppt" onclick="youRwatching();">Diseño de presentación</button><br>-->
-      <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".poster" onclick="youRwatching();">Cartel científico</button><br>-->
-      <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".mkt" onclick="youRwatching();">Marketing y publicidad</button><br>-->
-      <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".editorial" onclick="youRwatching();">Diseño Editorial</button><br>-->
-      <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".idv, .logo" onclick="youRwatching();">Identidad visual</button><br>-->
-      <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".logo" onclick="youRwatching();">Logo</button><br>-->
-      <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".icon" onclick="youRwatching();">Iconografía</button><br>-->
-      <i class="fas fa-hashtag"></i><button class="button" data-filter=".photo" onclick="youRwatching();">Edición fotográfica</button><br>
-      <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".web" onclick="youRwatching();">Desarrollo web</button><br>-->
-      <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".app" onclick="youRwatching();">Desarrollo de apps</button><br>-->
-      <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".podcast, .animate, .motion, .threed" onclick="youRwatching();">Producción audiovisual</button><br>-->
-      <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".podcast" onclick="youRwatching();">Podcast</button><br>-->
-      <i class="fas fa-hashtag"></i><button class="button" data-filter=".animate" onclick="youRwatching();">Animación</button><br>
-      <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".threed" onclick="youRwatching();">Diseño 3D</button><br>-->
-      <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".motion" onclick="youRwatching();">Motion graphics</button><br>-->
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Categorías</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="button-group filters-button-group">
+        <i class="fas fa-hashtag"></i><button class="button is-checked" data-filter="*" onclick="youRwatching();">Todos los proyectos</button><br>
+        <i class="fas fa-hashtag"></i><button class="button" data-filter=".recent" onclick="youRwatching();">Proyectos recientes</button><br>
+        <i class="fas fa-hashtag"></i><button class="button" data-filter=".viz, .maps, .charts" onclick="youRwatching();">Diseño de información</button><br>
+        <i class="fas fa-hashtag"></i><button class="button" data-filter=".viz" onclick="youRwatching();">Visualización de datos</button><br>
+        <i class="fas fa-hashtag"></i><button class="button" data-filter=".maps" onclick="youRwatching();">Cartografía</button><br>
+        <i class="fas fa-hashtag"></i><button class="button" data-filter=".ilustra" onclick="youRwatching();">Ilustración</button><br>
+        <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".info" onclick="youRwatching();">Infografía</button><br>-->
+        <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".ppt" onclick="youRwatching();">Diseño de presentación</button><br>-->
+        <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".poster" onclick="youRwatching();">Cartel científico</button><br>-->
+        <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".mkt" onclick="youRwatching();">Marketing y publicidad</button><br>-->
+        <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".editorial" onclick="youRwatching();">Diseño Editorial</button><br>-->
+        <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".idv, .logo" onclick="youRwatching();">Identidad visual</button><br>-->
+        <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".logo" onclick="youRwatching();">Logo</button><br>-->
+        <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".icon" onclick="youRwatching();">Iconografía</button><br>-->
+        <i class="fas fa-hashtag"></i><button class="button" data-filter=".photo" onclick="youRwatching();">Edición fotográfica</button><br>
+        <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".web" onclick="youRwatching();">Desarrollo web</button><br>-->
+        <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".app" onclick="youRwatching();">Desarrollo de apps</button><br>-->
+        <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".podcast, .animate, .motion, .threed" onclick="youRwatching();">Producción audiovisual</button><br>-->
+        <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".podcast" onclick="youRwatching();">Podcast</button><br>-->
+        <i class="fas fa-hashtag"></i><button class="button" data-filter=".animate" onclick="youRwatching();">Animación</button><br>
+        <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".threed" onclick="youRwatching();">Diseño 3D</button><br>-->
+        <!--<i class="fas fa-hashtag"></i><button class="button" data-filter=".motion" onclick="youRwatching();">Motion graphics</button><br>-->
+      </div>
     </div>
   </div>
-</div>
 
 <div class="grid">
   <div class="element-item charts x2 recent " data-category="charts">
     <div class="a1d1">
       <div class="content">
         <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/ciclo_krebs_1-08.jpg?v=1648770398" data-bs-ref="Basado en: Berg et al. (2015); Lehninger, Nelson y Cox (2015).; Voet y Voet (2010); Voet, Voet y Pratt (2013).">
-            <img src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/ciclo_krebs_1-08.jpg?v=1648770398" alt="Ciclo de Krebs">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox"
+          data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/ciclo_krebs_1-08.webp?v=1652302294"
+          data-bs-title="Ciclo del ácido cítrico"
+          data-bs-descr="Ciclo de Krebs con reactivos, productos y enzimas. Ideal para figuras en artículos y libros."
+          data-bs-tool="Illustrator"
+          data-bs-cat="Diseño de información; Proyectos recientes"
+          data-bs-ref="Basado en: Berg et al. (2015); Lehninger, Nelson y Cox (2015).; Voet y Voet (2010); Voet, Voet y Pratt (2013).">
+            <img src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/ciclo_krebs_1-08.webp?v=1652302294" alt="Ciclo de Krebs">
           </button>
         </div>
       </div>
@@ -103,8 +109,14 @@
     <div class="a1d1">
       <div class="content">
         <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/angiosperm_phylogeny_1-08.jpg?v=1648771299" data-bs-ref="Basado en: Angiosperm Phylogeny Group (APG IV); Simpson M.G. 2019. Plant Systematics. Academic Press.">
-            <img src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/angiosperm_phylogeny_1-08.jpg?v=1648771299" alt="Filogenia de Angiospermas">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox"
+          data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/angiosperm_phylogeny_1-08.webp?v=1652302294"
+          data-bs-title="Filogenia de Angiospermas"
+          data-bs-descr="Árbol filogenético con nodos y clados. Ideal para figuras en artículos y libros."
+          data-bs-tool="R; Illustrator"
+          data-bs-cat="Diseño de información; Proyectos recientes; Visualización de datos"
+          data-bs-ref="Basado en: Angiosperm Phylogeny Group (APG IV); Simpson M.G. 2019. Plant Systematics.">
+            <img src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/angiosperm_phylogeny_1-08.webp?v=1652302294" alt="Filogenia de Angiospermas">
           </button>
         </div>
       </div>
@@ -114,8 +126,14 @@
     <div class="a1d1">
       <div class="content">
         <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/microgametogenesis-08.jpg?v=1648843645" data-bs-ref="Basado en: Márquez-Guzmán et al. 2013. Biología de angiospermas; Simpson. 2019. Plant Systematics.">
-            <img src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/microgametogenesis-08.jpg?v=1648843645" alt="Microgametogénesis">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox"
+          data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/microgametogenesis-08.webp?v=1652302294"
+          data-bs-title="Microgametogénesis"
+          data-bs-descr="Ilustración del proceso de generación de gametos masculinos. Ideal para figuras en artículos y libros."
+          data-bs-tool="Illustrator"
+          data-bs-cat="Diseño de información; Ilustración; Proyectos recientes"
+          data-bs-ref="Basado en: Márquez-Guzmán et al. 2013. Biología de angiospermas; Simpson. 2019. Plant Systematics.">
+            <img src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/microgametogenesis-08.webp?v=1652302294" alt="Microgametogénesis">
           </button>
         </div>
       </div>
@@ -125,8 +143,14 @@
     <div class="a2d3">
       <div class="content">
         <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/morfologia_estambre-04.jpg?v=1648851930" data-bs-ref="Basado en: Márquez-Guzmán et al. 2013. Biología de Angiospermas; Simpson. 2019. Plant Systematics.">
-            <img src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/morfologia_estambre-04.jpg?v=1648851930" alt="Morfología Floral: Estambre">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox"
+          data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/morfologia_estambre-04.webp?v=1652302294"
+          data-bs-title="Morfología floral. Estambre"
+          data-bs-descr="Diagrama de estambre. Ideal para figuras en artículos y libros."
+          data-bs-tool="Illustrator"
+          data-bs-cat="Diseño de información; Ilustración; Proyectos recientes"
+          data-bs-ref="Basado en: Márquez-Guzmán et al. 2013. Biología de Angiospermas; Simpson. 2019. Plant Systematics.">
+            <img src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/morfologia_estambre-04.webp?v=1652302294" alt="Morfología Floral: Estambre">
           </button>
         </div>
       </div>
@@ -136,8 +160,14 @@
     <div class="a1d1">
       <div class="content">
         <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/microsporogenesis-08.jpg?v=1648849624" data-bs-ref="Basado en: Márquez-Guzmán et al. 2013. Biología de angiospermas; Valencia-Avalos. 2014. Introducción a las embriofitas.">
-            <img src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/microsporogenesis-08.jpg?v=1648849624" alt="Microsporogénesis">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox"
+          data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/microsporogenesis-08.webp?v=1652302294"
+          data-bs-title="Microsporogénesis"
+          data-bs-descr="Ilustración del proceso de generación de microsporas. Ideal para figuras en artículos y libros."
+          data-bs-tool="Illustrator"
+          data-bs-cat="Diseño de información; Ilustración; Proyectos recientes"
+          data-bs-ref="Basado en: Márquez-Guzmán et al. 2013. Biología de angiospermas; Valencia-Avalos. 2014. Introducción a las embriofitas.">
+            <img src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/microsporogenesis-08.webp?v=1652302294" alt="Microsporogénesis">
           </button>
         </div>
       </div>
@@ -147,8 +177,14 @@
     <div class="a1d1">
       <div class="content">
         <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/anps_cdmx-08.jpg?v=1648854056" data-bs-ref="Fuente: CONABIO, 2019">
-            <img src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/anps_cdmx-08.jpg?v=1648854056" alt="Áreas Naturales Protegidas. CDMX">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox"
+          data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/anps_cdmx-08.webp?v=1652302294"
+          data-bs-title="Áreas Naturales Protegidas. CDMX"
+          data-bs-descr="Mapa, estilo periodístico, de las ANPs de la Ciudad de México. Ideal para comunicar información al público en general."
+          data-bs-tool="QGIS; Illustrator"
+          data-bs-cat="Diseño de información; Cartografía; Proyectos recientes"
+          data-bs-ref="Fuente: CONABIO, 2019.">
+            <img src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/anps_cdmx-08.webp?v=1652302294" alt="Áreas Naturales Protegidas. CDMX">
           </button>
         </div>
       </div>
@@ -158,8 +194,14 @@
     <div class="a1d1">
       <div class="content">
         <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/histologia_antera-08.jpg?v=1648850827" data-bs-ref="Basado en: Evert y Eichhorn. 2012. Raven Biology of Plants; Simpson. 2019. Plant Systematics.">
-            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/histologia_antera-08.jpg?v=1648850827" alt="Histología Floral: Antera">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox"
+          data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/histologia_antera-08.webp?v=1652302294"
+          data-bs-title="Histología floral. Antera"
+          data-bs-descr="Diagrama del corte transversal de antera. Ideal para figuras en libros y artículos."
+          data-bs-tool="Illustrator"
+          data-bs-cat="Diseño de información; Ilustración; Proyectos recientes"
+          data-bs-ref="Basado en: Evert y Eichhorn. 2012. Raven Biology of Plants; Simpson. 2019. Plant Systematics.">
+            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/histologia_antera-08.webp?v=1652302294" alt="Histología Floral: Antera">
           </button>
         </div>
       </div>
@@ -169,8 +211,14 @@
     <div class="a1d1">
       <div class="content">
         <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/genoma_mitocondrial-01.jpg?v=1648858564" data-bs-ref="Basado en: Chocron, Munkácsy & Pickering (2018).">
-            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/genoma_mitocondrial-01.jpg?v=1648858564" alt="Genoma mitocondrial">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox"
+          data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/genoma_mitocondrial-01.webp?v=1652302294"
+          data-bs-title="Genoma mitocondrial"
+          data-bs-descr="Diagrama del genoma mitocondrial humano. Ideal para figuras en libros y artículos."
+          data-bs-tool="Illustrator"
+          data-bs-cat="Diseño de información; Proyectos recientes"
+          data-bs-ref="Basado en: Chocron, Munkácsy & Pickering (2018).">
+            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/genoma_mitocondrial-01.webp?v=1652302294" alt="Genoma mitocondrial">
           </button>
         </div>
       </div>
@@ -180,8 +228,14 @@
     <div class="a3d2">
       <div class="content">
         <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/integrated_synthesis-05.jpg?v=1648856921" data-bs-ref="Basado en: Noble D. (2015). Evolution beyond neo-Darwinism: a new conceptual framework.">
-            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/integrated_synthesis-05.jpg?v=1648856921" alt="Evolutionary Integrated Synthesis">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox"
+          data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/integrated_synthesis-05.webp?v=1652302293"
+          data-bs-title="Darwinismo, Síntesis Moderna y Síntesis Integrativa"
+          data-bs-descr="Diagrama de corrientes de pensamiento evolutivo. Ideal para figuras en libros y artículos."
+          data-bs-tool="Illustrator"
+          data-bs-cat="Diseño de información; Proyectos recientes"
+          data-bs-ref="Basado en: Noble D. (2015). Evolution beyond neo-Darwinism: a new conceptual framework.">
+            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/integrated_synthesis-05.webp?v=1652302293" alt="Evolutionary Integrated Synthesis">
           </button>
         </div>
       </div>
@@ -191,8 +245,14 @@
     <div class="a3d2">
       <div class="content">
         <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/mutaciones_transiciones-05.jpg?v=1648858134" data-bs-ref="Basado en: Pierce, B. 2010. Genetics. A conceptual approach.">
-            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/mutaciones_transiciones-05.jpg?v=1648858134" alt="Mutaciones génicas. Transiciones">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox"
+          data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/mutaciones_transiciones-05.webp?v=1652302294"
+          data-bs-title="Mutaciones génicas. Transiciones"
+          data-bs-descr="Diagrama de los procesos de mutación génica. Ideal para figuras en libros y artículos."
+          data-bs-tool="Illustrator"
+          data-bs-cat="Diseño de información; Proyectos recientes;"
+          data-bs-ref="Basado en: Pierce, B. 2010. Genetics. A conceptual approach.">
+            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/mutaciones_transiciones-05.webp?v=1652302294" alt="Mutaciones génicas. Transiciones">
           </button>
         </div>
       </div>
@@ -202,8 +262,14 @@
     <div class="a1d1">
       <div class="content">
         <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/vacunacion-covid19-08.jpg?v=1648866482" data-bs-ref="Fuente: Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021).">
-            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/vacunacion-covid19-08.jpg?v=1648866482" alt="Vacunación Covid-19 en México">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox"
+          data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/vacunacion-covid19-08.webp?v=1652302294"
+          data-bs-title="Vacunación COVID-19 en México"
+          data-bs-descr="Gráfico estilo periodístico. Ideal para comunicar datos al público en general."
+          data-bs-tool="R; Illustrator"
+          data-bs-cat="Diseño de información; Proyectos recientes; Visualización de datos"
+          data-bs-ref="Fuente: Mathieu, E., Ritchie, H., Ortiz-Ospina, E. et al. A global database of COVID-19 vaccinations. Nat Hum Behav (2021).">
+            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/vacunacion-covid19-08.webp?v=1652302294" alt="Vacunación Covid-19 en México">
           </button>
         </div>
       </div>
@@ -213,8 +279,14 @@
     <div class="a2d3">
       <div class="content">
         <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/covid-19-04.jpg?v=1648861712" data-bs-ref="Fuente: COVID-19 Tablero México (CONACYT - CentroGeo - GeoInt - Datalab) al 04/08/2021.">
-            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/covid-19-04.jpg?v=1648861712" alt="Covid-19 en México">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox"
+          data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/covid-19-04.webp?v=1652302294"
+          data-bs-title="COVID-19 en México"
+          data-bs-descr="Gráfico estilo periodístico. Ideal para comunicar datos al público en general."
+          data-bs-tool="R; Illustrator"
+          data-bs-cat="Diseño de información; Proyectos recientes; Visualización de datos"
+          data-bs-ref="Fuente: COVID-19 Tablero México (CONACYT - CentroGeo - GeoInt - Datalab) al 04/08/2021.">
+            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/covid-19-04.webp?v=1652302294" alt="Covid-19 en México">
           </button>
         </div>
       </div>
@@ -224,8 +296,14 @@
     <div class="a3d2">
       <div class="content">
         <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/hominoidea-05.jpg?v=1648859070" data-bs-ref="Basado en: Duda y Zrzavý. 2013. Evolution of life history and behavior in Hominidae.">
-            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/hominoidea-05.jpg?v=1648859070" alt="Filogenia de Hominoidea">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox"
+          data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/hominoidea-05.webp?v=1652302293"
+          data-bs-title="Filogenia de Hominoidea"
+          data-bs-descr="Árbol filogenético con siluetas y nodos. Ideal para figuras en artículos o libros."
+          data-bs-tool="R; Illustrator"
+          data-bs-cat="Diseño de información; Proyectos recientes; Visualización de datos"
+          data-bs-ref="Basado en: Duda y Zrzavý. 2013. Evolution of life history and behavior in Hominidae.">
+            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/hominoidea-05.webp?v=1652302293" alt="Filogenia de Hominoidea">
           </button>
         </div>
       </div>
@@ -235,41 +313,65 @@
     <div class="a2d3">
       <div class="content">
         <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/clorofila_A-04.jpg?v=1648852428" data-bs-ref="Basado en: Taiz y Zeiger. 2010. Plant physiology.">
-            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/clorofila_A-04.jpg?v=1648852428" alt="Estructura Molecular: Clorofila">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox"
+          data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/clorofila_A-04.webp?v=1652302293"
+          data-bs-title="Estructura molecular. Clorofila a"
+          data-bs-descr="Diagrama químico con claves de color. Ideal para figuras en artículos o libros."
+          data-bs-tool="Illustrator"
+          data-bs-cat="Diseño de información; Proyectos recientes"
+          data-bs-ref="Basado en: Taiz y Zeiger. 2010. Plant physiology.">
+            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/clorofila_A-04.webp?v=1652302293" alt="Estructura Molecular: Clorofila">
           </button>
         </div>
       </div>
     </div>
   </div>
-  <div class="element-item photo x3 recent " data-category="charts">
+  <div class="element-item photo x3 recent " data-category="photo">
     <div class="a3d2">
       <div class="content">
         <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/corn_stem_comp.jpg?v=1648942428" data-bs-ref="Mejorar la definición de imágenes de microscopía. Thomas Quine. Corn stem cross-section. CC BY 2.0">
-            <img style="transform:scale(1.1);" class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/corn_stem_comp.jpg?v=1648942428" alt="Corn stem cross-section">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox"
+          data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/corn_stem_comp.webp?v=1652304269"
+          data-bs-title="Corn stem cross-section"
+          data-bs-descr="Foto original (izquierda). Edición fotográfica para mejorar la definición (derecha). Ideal para maximizar la claridad de figuras en artículos y libros."
+          data-bs-tool="Photoshop"
+          data-bs-cat="Edición fotográfica; Proyectos recientes"
+          data-bs-ref="Thomas Quine en Flickr. Corn stem cross-section. CC BY 2.0">
+            <img style="transform:scale(1.1);" class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/corn_stem_comp.webp?v=1652304269" alt="Corn stem cross-section">
           </button>
         </div>
       </div>
     </div>
   </div>
-  <div class="element-item photo x2 recent " data-category="charts">
+  <div class="element-item photo x2 recent " data-category="photo">
     <div class="a1d1">
       <div class="content">
         <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/eritrocito_sem_comp.jpg?v=1648941883" data-bs-ref="Colorizar imágenes de microscopía electrónica. NIH Image Gallery. Red blood cells infected with malaria. CC BY-NC 2.0">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox"
+          data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/eritrocito_sem_comp.jpg?v=1648941883"
+          data-bs-title="Red blood cells infected with malaria"
+          data-bs-descr="Foto original (abajo). Edición fotográfica para colorizar (arriba). Ideal como elemento para portadas de publicaciones o para material de promoción."
+          data-bs-tool="Photoshop"
+          data-bs-cat="Edición fotográfica; Proyectos recientes"
+          data-bs-ref="NIH Image Gallery en Flickr. Red blood cells infected with malaria. CC BY-NC 2.0">
             <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/eritrocito_sem_comp.jpg?v=1648941883" alt="Red blood cells infected with malaria">
           </button>
         </div>
       </div>
     </div>
   </div>
-  <div class="element-item photo x2 recent " data-category="charts">
+  <div class="element-item photo x2 recent " data-category="photo">
     <div class="a1d1">
       <div class="content">
         <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/tardigrade_comp.jpg?v=1648943064" data-bs-ref="Remover objetos. AJC1. Tardigrade. CC BY-SA 2.0">
-            <img style="left:-14.65%;" class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/tardigrade_comp.jpg?v=1648943064" alt="Tardigrade">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox"
+          data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/tardigrade_comp.webp?v=1652304295"
+          data-bs-title="Tardígrado"
+          data-bs-descr="Foto original (arriba). Edición fotográfica para remover objetos (abajo). Mejora la presentación y ayuda al espectador a enfocarse en el elemento clave."
+          data-bs-tool="Photoshop"
+          data-bs-cat="Edición fotográfica; Proyectos recientes"
+          data-bs-ref="AJC1 en Flickr. Tardigrade. CC BY-SA 2.0">
+            <img style="left:-14.65%;" class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/tardigrade_comp.webp?v=1652304295" alt="Tardigrade">
           </button>
         </div>
       </div>
@@ -279,8 +381,14 @@
     <div class="a1d1">
       <div class="content">
         <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lottiebox" data-bs-jsonsrc="https://assets10.lottiefiles.com/packages/lf20_vstkmqkw.json" data-bs-ref="Animación digital. Caricatura de un átomo. Tamaño: 23 KB.">
-            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/atom-01.jpg?v=1649557898" alt="Átomo">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lottiebox"
+          data-bs-jsonsrc="https://assets10.lottiefiles.com/packages/lf20_vstkmqkw.json"
+          data-bs-title="Átomo (caricatura)"
+          data-bs-descr="Animación digital para presentar en sitios web. Ideal para video abstracts de reacciones químicas, vías de señalización, entre otros procesos."
+          data-bs-tool="Illustrator; After Effects; Lottie"
+          data-bs-cat="Animación; Proyectos recientes"
+          data-bs-ref="Tamaño web: 23 KB.">
+            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/atom-01.webp?v=1652304248" alt="Átomo">
           </button>
         </div>
       </div>
@@ -290,8 +398,14 @@
     <div class="a1d1">
       <div class="content">
         <div class="portfolio-item">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox" data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/protein.jpg?v=1649646078" data-bs-ref="Mechanosensitive Channel Piezo1. Ilustración asistida del Protein Data Bank y Protein Imager (G. Tomasello, I. Armenia y G. Molla, 2020).">
-            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/protein.jpg?v=1649646078" alt="MECHANOSENSITIVE CHANNEL PIEZO1">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lightbox"
+          data-bs-imgsrc="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/protein.webp?v=1652304417"
+          data-bs-title="Mechanosensitive Channel Piezo1"
+          data-bs-descr="Ilustración ideal como elemento para la portada de alguna publicación o para material promocional."
+          data-bs-tool="Protein Data Bank (PDB); Protein Imager; Photoshop"
+          data-bs-cat="Ilustración; Proyectos recientes"
+          data-bs-ref="-">
+            <img class="lazy" data-src="https://cdn.shopify.com/s/files/1/0507/9102/2742/files/protein.webp?v=1652304417" alt="MECHANOSENSITIVE CHANNEL PIEZO1">
           </button>
         </div>
       </div>
@@ -387,7 +501,11 @@
         <img src="" id="previewed">
         <img src="" id="preview">
       </div>
-      <p></p>
+      <p class="title"></p>
+      <p class="descr"></p>
+      <p class="tool"></p>
+      <p class="cat"></p>
+      <p class="ref"></p>
       <div class="modal-footer">
         <button type="button" data-bs-dismiss="modal">Cerrar</button>
       </div>
@@ -403,7 +521,11 @@
       </div>
       <div class="modal-body">
       </div>
-      <p></p>
+      <p class="title"></p>
+      <p class="descr"></p>
+      <p class="tool"></p>
+      <p class="cat"></p>
+      <p class="ref"></p>
       <div class="modal-footer">
         <button type="button" data-bs-dismiss="modal">Cerrar</button>
       </div>
@@ -438,24 +560,53 @@ document.addEventListener('DOMContentLoaded', function () {
   </script>
 
 <script>
+function mod2offc() {
+  setTimeout(() => {
+    var sidemenu = new bootstrap.Offcanvas(document.getElementById('offcanvasWithBothOptions'));
+    sidemenu.show();
+}, 250);
+}
+</script>
+
+<script>
 var lightboxModal = document.getElementById('lightbox')
 lightboxModal.addEventListener('show.bs.modal', function (event) {
   // Button that triggered the modal
   var button = event.relatedTarget;
   // Extract info from data-bs-* attributes
   var recipient = button.getAttribute('data-bs-imgsrc');
-  var recipient2 = button.getAttribute('data-bs-ref');
+  var recipient2 = button.getAttribute('data-bs-title');
+  var recipient3 = button.getAttribute('data-bs-descr');
+  var recipient4 = button.getAttribute('data-bs-tool').split("; ");
+  recipient4.forEach(function(part, index) {
+    this[index] = '<li>'+ part + '</li>';
+  }, recipient4);
+  var recipient4 = recipient4.join(" ");
+  var recipient5 = button.getAttribute('data-bs-cat').split("; ");
+  recipient5.forEach(function(part, index) {
+    this[index] = '<div class="category"><i class="fas fa-hashtag"></i><button class="button" data-bs-dismiss="modal" onclick="mod2offc()">'+ part + '</button></div>';
+  }, recipient5);
+  var recipient5 = recipient5.join(" ");
+  var recipient6 = button.getAttribute('data-bs-ref');
   // Update the modal's content.
   var modalBodyImg = lightboxModal.querySelector('.modal-body img');
   var modalBodyPreview = lightboxModal.querySelector('.modal-body #preview');
-  var modalBodyRef = lightboxModal.querySelector('.modal-content p');
+  var modalBodyTitle = lightboxModal.querySelector('.modal-content .title');
+  var modalBodyDescr = lightboxModal.querySelector('.modal-content .descr');
+  var modalBodyTool = lightboxModal.querySelector('.modal-content .tool');
+  var modalBodyCat = lightboxModal.querySelector('.modal-content .cat');
+  var modalBodyRef = lightboxModal.querySelector('.modal-content .ref');
 
   document.querySelectorAll(".one-third")[1].style.paddingRight = getComputedStyle(document.documentElement).getPropertyValue('--scrollbar-width');
   document.querySelectorAll(".icons")[0].style.right = String(parseInt(getComputedStyle(document.querySelectorAll(".icons")[0]).getPropertyValue('right')) + parseInt(getComputedStyle(document.documentElement).getPropertyValue('--scrollbar-width'))) + "px";
 
   modalBodyImg.src = recipient;
   modalBodyPreview.src = recipient;
-  modalBodyRef.innerHTML = recipient2;
+  modalBodyTitle.innerHTML = recipient2;
+  modalBodyDescr.innerHTML = recipient3;
+  modalBodyTool.innerHTML = '<ul>'+recipient4+'</ul>';
+  modalBodyCat.innerHTML = recipient5;
+  modalBodyRef.innerHTML = recipient6;
 });
 
 lightboxModal.addEventListener('hide.bs.modal', function (event) {
@@ -472,17 +623,37 @@ lottieboxModal.addEventListener('show.bs.modal', function (event) {
   // Button that triggered the modal
   var button = event.relatedTarget;
   // Extract info from data-bs-* attributes
-  var recipient3 = button.getAttribute('data-bs-jsonsrc');
-  var recipient4 = button.getAttribute('data-bs-ref');
+  var recipient7 = button.getAttribute('data-bs-jsonsrc');
+  var recipient8 = button.getAttribute('data-bs-title');
+  var recipient9 = button.getAttribute('data-bs-descr');
+  var recipient10 = button.getAttribute('data-bs-tool').split("; ");
+  recipient10.forEach(function(part, index) {
+    this[index] = '<li>'+ part + '</li>';
+  }, recipient10);
+  var recipient10 = recipient10.join(" ");
+  var recipient11 = button.getAttribute('data-bs-cat').split("; ");
+  recipient11.forEach(function(part, index) {
+    this[index] = '<div class="category"><i class="fas fa-hashtag"></i><button class="button" data-bs-dismiss="modal" onclick="mod2offc()">'+ part + '</button></div>';
+  }, recipient11);
+  var recipient11 = recipient11.join(" ");
+  var recipient12 = button.getAttribute('data-bs-ref');
   // Update the modal's content.
   var modalBody = lottieboxModal.querySelector('.modal-body');
-  var modalBodyRef = lottieboxModal.querySelector('.modal-content p');
+  var modalBodyTitle = lottieboxModal.querySelector('.modal-content .title');
+  var modalBodyDescr = lottieboxModal.querySelector('.modal-content .descr');
+  var modalBodyTool = lottieboxModal.querySelector('.modal-content .tool');
+  var modalBodyCat = lottieboxModal.querySelector('.modal-content .cat');
+  var modalBodyRef = lottieboxModal.querySelector('.modal-content .ref');
 
   document.querySelectorAll(".one-third")[1].style.paddingRight = getComputedStyle(document.documentElement).getPropertyValue('--scrollbar-width');
   document.querySelectorAll(".icons")[0].style.right = String(parseInt(getComputedStyle(document.querySelectorAll(".icons")[0]).getPropertyValue('right')) + parseInt(getComputedStyle(document.documentElement).getPropertyValue('--scrollbar-width'))) + "px";
 
-  modalBody.innerHTML = '<lottie-player background="transparent" src="' + recipient3 + '" speed="1"  style="width: 100%; height: auto;"  loop  autoplay></lottie-player>';
-  modalBodyRef.innerHTML = recipient4;
+  modalBody.innerHTML = '<lottie-player background="transparent" src="' + recipient7 + '" speed="1"  style="width: 100%; height: auto;"  loop  autoplay></lottie-player>';
+  modalBodyTitle.innerHTML = recipient8;
+  modalBodyDescr.innerHTML = recipient9;
+  modalBodyTool.innerHTML = '<ul>'+recipient10+'</ul>';
+  modalBodyCat.innerHTML = recipient11;
+  modalBodyRef.innerHTML = recipient12;
 });
 
 lottieboxModal.addEventListener('hide.bs.modal', function (event) {
@@ -495,7 +666,6 @@ lottieboxModal.addEventListener('hide.bs.modal', function (event) {
 
   <script>
 // external js: isotope.pkgd.js, packery-mode.pkgd.js
-
 // init Isotope
 var iso = new Isotope( '.grid', {
   layoutMode: 'packery',
@@ -541,10 +711,10 @@ function radioButtonGroup( buttonGroup ) {
 <script>
 function youRwatching() {
   setTimeout(() => {
-  const  elements = document.getElementsByClassName('is-checked');
+  const elements = document.getElementsByClassName('is-checked');
   const text = elements[0].innerHTML ;
   const watchingR = document.getElementsByClassName('Rwatching');
-  watchingR[0].innerHTML  = text;
+  watchingR[0].innerHTML = text;
 }, 125);
 }
 </script>
